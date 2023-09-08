@@ -1,146 +1,395 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>IBitu Tech News - Latest news Update around the world</title>
-  <link rel="icon" href="Image/engineer.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</head>
-<body class="container-fluid body_section">
-        <header>
-              <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand brand-name" href="#">iBITU News</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="#">Education</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link headerachor" href="#">Contact Me</a>
-                    </li>
-                  </ul>
-              </nav>
-          </header>
-
-          <section id = "Home">
-              <div class="row column1">
-                <div class="col-lg-6 col-md-6 first-image">
-                    <img class = "boyimage" src="Image/20200630_162659.gif" alt="">
-                </div>  
-                  <div class="col-lg-6 section-1">
-                      <h1 class = "Hello">Hello All ! Welcome to the ibitu <span class="wave">👋</span></h1>
-                      <p>Our website provide you latest updated Tech News | Educational News around the world.</p>
-                          <div class=social_media_icon>
-                            <a class="btn" href="#" target=_blank>
-                              <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn" href="#" target=_blank>
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="btn" href="#" target=_blank>
-                              <i class="fab fa-github"></i>
-                            </a>
-                            <a class="btn" href="#" target=_blank>
-                              <i class="fab fa-google"></i>
-                            </a>
-                          </div>
-                  </div>
-                  <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
-              </div>
-          </section>
+  <head>
+    <meta charset="utf-8">
+    <style>
 
 
-          <section id=Whatido>
-            <h1>What News We Share ?</h1>
-              <div class = "row feature-1">
-                  <div class="col-lg-6 col-md-6 Feature-first-image ">
-                    <img class = "Feature-svg-image" src="Image/Data_Analysis.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <h1 class= "Feature-Heading" >  Educational News</h1>
-                    <hr>
-                    <!-- <ul class = "dev-icon">
-                      <li><i class="fab fa-python fa-5x" style="color:#3776ab"></i></li>
-                      <li><img class="numpy" src="Image/numpy-ar21.svg" alt=""></li>
-                      <li><img class = "pandas" src="Image/kindpng_5747046.png" alt=""></li>
-                    </ul> -->
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥 It is importent to knew some educational news for student who study right now, here in the website also provide you latest updated educational news .</p>
-                      <p  class ="Features-paragraph">
-                         💥 Educational news such, exam date, result date of some importent exam,.</p>
+
+
+body {
+	background-color:transparent;
+	text-align:center;
+  margin: auto;
+}
+article {
+	word-wrap: break-word;
+	padding: 2px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-color:Lavender;
+	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
+	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+}
+table {
+   text-align:center;
+   width:100%;
+   border-spacing:0;
+   border:2px solid green;
+   margin: 0;
+}
+td {
+   text-align:center;
+}
+#aa {
+     color:Maroon;
+     background-color:Cyan;
+     text-shadow:MediumSeaGreen 1px 1px 1px;
+     font-size:53px;
+     width:100%;
+     height:481px;
+     margin: 0;
+     padding: 0;
+}
+#ab {
+     color:Maroon;
+     background-color:none;
+     text-align:left;
+     font-size:17px;
+     width:295px;
+     margin-left:5px;
+     padding: 0;
+}
+#ac {
+     color:Maroon;
+     background-color:Cyan;
+     text-shadow:MediumSeaGreen 1px 1px 1px;
+     font-size:17px;
+     width:280px;
+     height:50px;
+     margin: 0;
+     padding: 0;
+}
+#teal {
+     background-color:green;
+}
+#border {
+     border-right:2px solid teal;
+     border-top:2px solid teal;
+     border-left:2px solid teal;
+     border-bottom:2px solid teal;
+}
+#ToDate {
+         color:Red;
+	 font-size:19px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Sig {
+        color:Maroon;
+}
+#Red {
+         color:Red;
+	 font-size:64px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Date {
+         color:Red;
+	 font-size:80px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+
+.table1 {
+     width: 100%;
+     border-spacing: 0;
+     border: 2px solid green;
+     margin: 0;
+ }
+
+ .scroll1 {
+     margin: 4px, 4px;
+     padding: 4px;
+     overflow-x: hidden;
+     overflow-x: auto;
+     text-align: justify;
+ }
+
+ .holiheader {
+     background-color: rgb(255, 255, 255);
+     font-size: 53px;
+     text-align: center;
+     color: rgb(228, 13, 13);
+     text-shadow: rgb(20, 8, 8) 1px 1px 1px;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .raw12 {
+     margin: 0;
+     padding: 0;
+     width: 50%;
+     font-size: 53px;
+     text-align: center;
+ }
+
+ .main1 {
+     font-size: 64px;
+     text-align: center;
+     color: orange;
+     text-shadow: black 1px 1px 1px;
+ }
+
+
+/* header */
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+header{
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ol{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+}
+header ol a,header a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size:41px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li{
+    font-size:42px;
+    padding: 10px 20px;
+    border-radius: 10px  0px 10px 0px;
+     margin: 0 5px;
+    transition:  .3s all ease-in;
+}
+header ol a li:hover{
+    background-color: white;
+    color: black;
+}
+.checkBtn{
+    display: none;
+}
+        @media only screen and (max-width: 665px) {
+    .checkBtn{
+      display: block;
+     width: 25px;
+     height: 25px;
+     cursor: pointer;
+     position: relative;
+     appearance: none;
+     -webkit-appearance:  none;
+}
+.checkBtn::before{
+content: '\f0c9';
+font-family: 'Font Awesome 5 Free';
+font-weight: 700;
+font-size: 1.5em;
+color: white;
+}
+.checkBtn:checked::before{
+    content: '\f00d';
+}
+
+      header ol{
+position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    padding: 1.2em;
+    background-color: black;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .4s clip-path;
+}
+.checkBtn:checked ~ ol{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+ header ol a li{
+    margin: 5px 0;
+ }
+ header ol::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: 5px;
+    background-color: grey;
+    top: 98%;
+    left: 0;
+ }
+}
+.logo img{
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+  }
+
+
+
+    </style>
+
+
+    <title>(আজিৰ অসমীয়া তাৰিখ) Assamese Today Date, Month & Years</title>
+  </head>
+  <body>
+    
+    
+    
+    <header>
+      <a href="index.html" class="logo">Calender <img src="ao.webp" alt="No"> </a>
+      <input type="checkbox" class="checkBtn" />
+      <ol>
+          <a href="#">
+              <li>PAGES</li>
+          </a>
+          <a href="#">
+              <li>PDF</li>
+          </a>
+              </ol>
+  </header>
+    
+    
+<article><table><tr id='teal'>
+    <td colspan="7" id='bordertop'>
+    <button id="aa">আজি <a id="Day"></a>বাৰ
+    </br>অসমীয়া লেখেৰে
+    </br><a id="Red">ব’হাগ মাহৰ</a> <a id="Date"></a> <a id="Red">তাৰিখ</a>
+    </br>১৪৩০ ভাস্কৰাব্দ (১৯৪৪ শকাব্দ)।
+    </br>(<a id="EnDate"></a> <a id="EnMonth"></a>, ২০২৩)
+    </button>
+    </td>
+    </tr>
+    </table>
+    </article>
+    <marquee behavior="scroll" direction="left" scrollamount="3"><a id="ToDate"></a></marquee>
+
+  </br>
+
+  <h1 style="font-size: 54px;"> (আজিৰ অসমীয়া তাৰিখ) <div style="font-size: 55px;">Assamese Today Date, Month & Years </div> </h1>
+
+
+<img src="" alt="">
+  <!-- Calender -->
+
+
+  <!-- calender -->
+
+  <!-- holidays blocks started -->
+
+  <article>
+    <table class="table1">
+        <tr>
+            <td colspan="7">
+                <center>
+                    <a class="main1">উৎসৱৰ তালিকা</a>
+                </center>
+            </td>
+        </tr>
+        <tr id='teal'>
+            <td colspan="6">
+                <div>
+                    <button class="holiheader">২০২৩ বৰ্ষ</button>
+                    <div class="scroll1">
+                        <button class="raw12">১৫ জানুৱাৰী</button><button class="raw12">মাঘ বিহু</button><br>
+                        <button class="raw12">১৬ জানুৱাৰী</button><button class="raw12">টুছু পূজা</button><br>
+                        <button class="raw12">২৩ জানুৱাৰী</button><button class="raw12">নেতাজী জয়ন্তী</button><br>
+                        <button class="raw12">২৪ জানুৱাৰী</button><button class="raw12">বাথৌ পূজা</button><br>
+                        <button class="raw12">২৬ জানুৱাৰী</button><button class="raw12">গণতন্ত্ৰ দিৱস, সৰস্বতী পূজা</button><br>
+                        <button class="raw12">৩১ জানুৱাৰী</button><button class="raw12">মে-ডাম-মে-ফি</button><br>
+                        <button class="raw12">৫ ফেব্ৰুৱাৰী</button><button class="raw12">বীৰ চিলাৰায় দিৱস</button><br>
+                        <button class="raw12">৭ মাৰ্চ</button><button class="raw12">দৌল যাত্ৰা</button><br>
+                        <button class="raw12">৭ এপ্ৰিল</button><button class="raw12">গুড ফ্ৰাইডে</button><br>
+                        <button class="raw12">১৪, ১৫, ১৬ এপ্ৰিল</button><button class="raw12">বহাগ বিহু</button><br>
+                        <button class="raw12">২০ এপ্ৰিল</button><button class="raw12">দামোদৰ দেৱৰ তিথি</button><br>
+                        <button class="raw12">২১ এপ্ৰিল</button><button class="raw12">সতী সাধনী দিৱস</button><br>
+                        <button class="raw12">২২ এপ্ৰিল</button><button class="raw12">ঈদ-উল-ফিটৰ</button><br>
+                        <button class="raw12">১ মে'</button><button class="raw12">শ্ৰমিক দিৱস</button><br>
+                        <button class="raw12">১২ মে'</button><button class="raw12">দামোদৰ দেৱৰ তিথি</button><br>
+                        <button class="raw12">১৪ মে'</button><button class="raw12">ইদ-উল-ফিতৰ</button><br>
+                        <button class="raw12">২৬ মে'</button><button class="raw12">বুদ্ধ পূৰ্ণিমা</button><br>
+                        <button class="raw12">২৭ মে'</button><button class="raw12">মাধৱদেৱৰ জন্মতিথি</button><br>
+                        <button class="raw12">৫ জুন</button><button class="raw12">বিশ্ব পৰিৱেশ দিৱস</button><br>
+                        <button class="raw12">২০ জুন</button><button class="raw12">বিষ্ণুৰাভা দিৱস</button><br>
+                        <button class="raw12">২১ জুলাই</button><button class="raw12">ইড-উজ-জোহা</button><br>
+                        <button class="raw12">১৫ আগষ্ট</button><button class="raw12">স্বাধীনতা দিৱস</button><br>
+                        <button class="raw12">১৯ আগষ্ট</button><button class="raw12">মহৰম</button><br>
+                        <button class="raw12">২৭ আগষ্ট</button><button class="raw12">মাধৱদেৱৰ তিথি</button><br>
+                        <button class="raw12">৩০ আগষ্ট</button><button class="raw12">জন্মাষ্টমী</button><br>
+                        <button class="raw12">৫ ছেপ্তেম্বৰ</button><button class="raw12">শিক্ষক দিৱস</button><br>
+                        <button class="raw12">৮ ছেপ্তেম্বৰ</button><button class="raw12">শংকৰদেৱৰ তিথি</button><br>
+                        <button class="raw12">২ অক্টোবৰ</button><button class="raw12">গান্ধী জয়ন্তী</button><br>
+                        <button class="raw12">১২, ১৩, ১৪, ১৫ অক্টোবৰ</button><button class="raw12">দুৰ্গা পূজা</button><br>
+                        <button class="raw12">১৮ অক্টোবৰ</button><button class="raw12">কাতি বিহু</button><br>
+                        <button class="raw12">২০ অক্টোবৰ</button><button class="raw12">লক্ষ্মী পূজা</button><br>
+                        <button class="raw12">৪ নৱেম্বৰ</button><button class="raw12">কালি পূজা/দীপাৱলী</button><br>
+                        <button class="raw12">৬ নৱেম্বৰ</button><button class="raw12">ভাতৃ দ্বিতীয়া</button><br>
+                        <button class="raw12">১০ নৱেম্বৰ</button><button class="raw12">ছট্ পূজা</button><br>
+                        <button class="raw12">১৪ নৱেম্বৰ</button><button class="raw12">শিশু দিৱস</button><br>
+                        <button class="raw12">১৯ নৱেম্বৰ</button><button class="raw12">গুৰু নানক জয়ন্তী</button><br>
+                        <button class="raw12">২৪ নৱেম্বৰ</button><button class="raw12">লাচিত দিৱস</button><br>
+                        <button class="raw12">২৬ নৱেম্বৰ</button><button class="raw12">সংবিধান দিৱস</button><br>
+                        <button class="raw12">২ ডিচেম্বৰ</button><button class="raw12">চ্যুকাফা দিৱস</button><br>
+                        <button class="raw12">২৫ ডিচেম্বৰ</button><button class="raw12">খ্ৰীষ্টমাচ</button><br>
                     </div>
-                </div>
-              </div>
-              <div class="row feature-2">
-                <div class="col-lg-6 col-md-6 feature-web">
-                  <h1 class="Feature-Heading">Tech News</h1>
-                  <hr>
-                  <!-- <ul class = "dev-icon">
-                    <li><i class="fab fa-html5 fa-5x" style="color:#e34f26"></i></li>
-                    <li><i class="fab fa-css3-alt fa-5x" style="color:#1572b6"></i></li>
-                    <li><i class="fab fa-bootstrap fa-5x" style="color:#543b79"></i></li>
-                    <li><i class="fab fa-js-square fa-5x" style="color:#f7df1e"></i></li>
-                    <li><i class="fab fa-react fa-5x" style="color:#61dafb"></i></li>
-                    <li><i class="fab fa-node fa-5x" style="color:#679e63"></i></li>
-                    <li><i class="fab fa-figma fa-5x" style="color:#f24e1e"></i></li>
-                
-                  </ul> -->
-                  <div class = "Data-Analytic">
-                    <p class ="Features-paragraph">
-                       💥 Our website provide alos latest tech news, latest smartphone releases and cutting-edge AI technologies to cybersecurity updates and gaming developments, we cover it all</p>
-                      </div>
-                </div>
-                <div class="col-lg-6 col-md-6 Feature-second-image ">
-                  <img class = "Feature-svg-image" src="Image/website.svg" alt="">
-                </div>
-              </div>
-              <div class="row feature-3">
-                <div class = "col-lg-6 col-md-6 Feature-third-image">
-                    <img class = "Feature-svg-image-3" src="Image/Coding.svg" alt="">
-                  </div>
-                  <div class="col-lg-6 col-md-6 feature-coding">
-                    <h1 class="Feature-Heading">Gaming News</h1>
-                    <hr>
-                    <!-- <ul class = "dev-icon">
-                     <li></li>
-                     <li><i class="fas fa-laptop-code fa-4x"></i></li>
-                     
-                     <li><i class="fas fa-file-code fa-4x" style="color: #a8afcb;"></i></li>
-                    </ul> -->
-                    <div class = "Data-Analytic">
-                      <p class ="Features-paragraph">
-                         💥Welcome to our gaming news website, where the world of gaming comes to life! Explore the latest updates, releases, and insights in the gaming industry. From upcoming game reviews to exclusive interviews with developers, we've got you covered. Immerse yourself in the exciting realm of gaming with our expertly crafted articles. Let the gaming adventure begin!</p>
-                        </div>
-                  </div>
-              </div>
-               
-        
-          </section>
-    <footer class=footer>Made with ❤️ by Bitu</footer>
-</body>
+
+    </table>
+</article>
+
+
+
+    <h2 style="font-size: 25px">importents of assamese calendar</h2>
+
+    <p>This Calendar Show you assamese date today</p>
+
+
+
+
+
+  <!-- holidays blocks end -->
+  
+    <script>
+    var n =  new Date();
+    var a = n.getDay();
+    var b = n.getDate();
+    var c = n.getMonth()+1;
+    var days = ["দেও", "সোম", "মংগল", "বুধ", "বৃহস্পতি", "শুক্ৰ", "শণি"];
+    var dates = ["১৫", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫", "১৬", "১৭"];
+    var enmonth = ["০", "জানুৱাৰী", "ফেব্ৰুৱাৰী", "মাৰ্চ", "এপ্ৰিল", "মে'", "জুন", "জুলাই", "আগষ্ট", "ছেপ্টেম্বৰ", "অক্টোবৰ", "নৱেম্বৰ", "ডিচেম্বৰ"];
+    var endates = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫", "১৬", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১"];
+    var today = c+''+c+''+b
+                            if (today > 121231 ) {A=""}
+    	else {A=''}
+    function checkTime(i){
+               if(i<10){i="0"+i};// add Zero in front of numbers < 10
+               return i;}
+    document.getElementById('ToDate').innerHTML = A;
+    document.getElementById("Day").innerHTML = days[a];
+    document.getElementById("Date").innerHTML = dates[b];
+    document.getElementById("EnMonth").innerHTML = enmonth[c];
+    document.getElementById("EnDate").innerHTML = endates[b];
+    </script>
+  </body>
 </html>
